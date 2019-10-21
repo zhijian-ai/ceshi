@@ -1,0 +1,29 @@
+.pointer{
+	height: 1800px;
+	background: url(../images/gongsi.jpg) no-repeat;
+}
+.content{
+	margin-bottom: 26px;
+}
+.right img{
+	float: left;
+	width: 381px;
+	height: 691px;
+}
+.right h4{
+	font-size: 30px;
+	color: #d11719;
+	text-align: center;
+}
+.right ul{
+	float: right;
+	width: 475px;
+	height: 694px;
+	background: white;
+}
+.right p{
+	font-size: 14px;
+	padding:0 10px;
+	line-height: 32px;
+	text-indent: 2em;
+}

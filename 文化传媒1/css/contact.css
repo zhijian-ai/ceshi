@@ -1,0 +1,33 @@
+
+.pointer{
+	height: 1600px;
+	background: url(../images/lianxi_bj.jpg) no-repeat;
+}
+.slider{
+	height: 395px;
+}
+.content{
+	height: 700px;
+	margin-bottom: 38px;
+}
+.content .right{
+	height: 600px;
+}
+.content .left .tel{
+	width: 263px;
+	line-height: 50px;
+	color: white;
+	margin-top: 20px;
+	text-align: center;
+	background: url(../images/tel_03.jpg);
+}
+.content .right .dizhi1{
+	float: left;
+	padding-top: 30px;
+	line-height: 37px;
+}
+.content .right .dizhi2{
+	float: right;
+	padding-top: 30px;
+	line-height: 37px;
+}

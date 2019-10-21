@@ -1,0 +1,41 @@
+
+.pointer{
+	background: url(../images/gongsi.jpg) no-repeat;
+}
+.content{
+	margin-bottom: 26px;
+}
+.content .right ul{
+	display: flex;
+	height: 800px;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-content: space-around;
+}
+.content .right ul li{
+	width: 271px;
+	height: 364px;
+	line-height: 35px;
+	background: #e8e8e8;
+	border: 1px solid #DDDDDD;
+}
+.content .right ul li a{
+	color: black;
+}
+.content .right ul .pic{
+	background: #e31517;
+}
+.content .right ul .pic a{
+	color: white;
+}
+.content .right .fenye{
+	float: right;
+}
+.content .right .fenye a{
+	color: black;
+	border: 1px solid #c1c1c1;
+}
+.content .right .fenye .wen{
+	color:#e31517 ;
+	border: none;
+}

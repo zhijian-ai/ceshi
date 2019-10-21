@@ -1,0 +1,164 @@
+.pointer{
+  background: url("../images/beijing.jpg");
+  }
+  
+.main{
+	width: 1200px;
+	height: 1111px;
+	margin: auto;
+	background: #fafafa;
+}
+.revolage{
+	height: 394px;
+	padding: 24px 2px;
+}
+.revolage h1{
+	position: relative;
+	top: 2px;
+	width: 170px;
+	color: #e31718;
+	font-size: 21px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid red;
+}
+.revolage h1 p{
+	display: inline;
+	font-size: 34px;
+}
+.revolage ul{
+	width: 1198px;
+	height: 330px;
+	border-top: 2px solid #dcdcdc;
+}
+.revolage ul li{
+	float: left;
+	width: 258px;
+	margin: 32px 18px 0;
+	text-align: center;
+	border: 1px solid #dcdcdc;
+}
+.revolage ul li:hover{
+	border: 1px solid red;
+}
+.revolage ul li h2{
+	color: red;
+	line-height: 49px;
+}
+.revolage ul li p{
+	padding:0 20px;
+	text-align:initial;
+}
+.revolage ul li a{
+	float: right;
+	line-height: 38px;
+	color: red;
+}
+.consult{
+	width: 1198px;
+	height: 414px;
+	padding: 0 2px;
+}
+.consult h1{
+	display: inline;
+	color: #e31718;
+	width: 75px;
+	font-size: 34px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid red;
+}
+.consult a{
+	float: right;
+	padding-top: 30px ;
+	color: red;
+}
+.consult .cont{
+	width: 1198px;
+	height: 330px;
+	margin-top:11px;
+	border-top:2px solid #dcdcdc;
+}
+.consult .cont .introduce{
+	float: left;
+	width: 482px;
+}
+.consult .cont .introduce ul{
+	padding-top: 10px;
+}
+.consult .cont .introduce ul li img{
+	float: left;
+	padding-right: 30px;
+}
+.consult .cont .introduce ul li{
+	height: 60px;
+	font-size: 12px;
+	padding: 10px 0;
+	border-bottom: 1px dotted #DCDCDC;	
+}
+.consult .cont .introduce ul li:hover{
+	border-bottom: 1px dotted red;
+}
+.consult .cont .introduce ul li:first-child{
+	padding-top: 25px;
+}
+.consult .cont .introduce ul li h4{
+	font-size: 16px;
+}
+.consult .cont .tel{
+	float: right;
+	width: 592px;
+}
+.consult .cont .tel .zixun{
+	float: left;
+	width: 278px;
+	height: 318px;
+	padding-top: 35px;
+}
+.consult .cont .tel li{
+	margin-top: 10px;
+	width: 313px;
+	line-height: 100px;
+	text-align: center;
+	float: right;
+	background: #dfdddd;
+}
+.consult .cont .tel li img{
+	float: left;
+	padding: 22px 0 22px 31px;
+}
+.consult .cont .tel li:first-child{
+	margin-top: 35px;
+}
+.consult .cont .tel .cur2{
+	color: white;
+	background: red;
+}
+.partner{
+	height: 210px;
+	padding: 20px 2px;
+}
+.partner h1{
+	display: inline;
+	color: #e31718;
+	width: 131px;
+	font-size: 34px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid red;
+}
+.partner a{
+	float: right;
+	padding-top: 30px ;
+	color: red;
+}
+.partner ul{
+	width: 1196px;
+	height: 154px;
+	margin-top: 10px;
+	border-top: 2px solid #dcdcdc;
+}
+.partner ul li{
+	float: left;
+	padding: 34px 64px 34px 2px;
+}
+.partner ul li:last-child{
+	padding-right: 0;
+}

@@ -1,0 +1,37 @@
+.pointer{
+	height: 1800px;
+	background: url(../images/news_bg.jpg) no-repeat;
+}
+.content{
+	margin-bottom: 25px;
+}
+.content .right h1{
+	width: 888px;
+	height: 38px;
+	text-align: center;
+	border-bottom: 1px solid #D3D3D3;
+}
+.content .right p{
+	line-height: 30px;
+	font-size: 12px;
+	color: #b4b4b4;
+	text-align: center;
+}
+.content .right p span{
+	float: right;
+}
+.content .right .zhengwen p{
+	text-align: left;
+	font-size: 14px;
+	line-height: 34px;
+	color: #3b3b3b;
+}
+.content .right .zhengwen span{
+	font-size: 14px;
+	line-height: 50px;
+	color: #3b3b3b;
+}
+.content .right .zhengwen span a{
+	color: #3b3b3b;
+}
+

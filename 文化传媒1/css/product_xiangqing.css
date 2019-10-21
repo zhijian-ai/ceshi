@@ -1,0 +1,22 @@
+
+.pointer{
+	height: 1800px;
+	background: url(../images/product_xiangqing.jpg) no-repeat;
+}
+.content{
+	margin-bottom:34px ;
+}
+.slider{
+	height: 400px;
+}
+.content .right dl{
+	padding-top: 20px;
+}
+.content .right dt{
+	line-height: 38px;
+	font-size: 20px;
+}
+.content .right dd{
+	line-height: 30px;
+	color: #686868;
+}

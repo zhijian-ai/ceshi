@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+	
+	
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+    #div_content {
+        height: 500px;
+        width: 500px;
+    }
+ 
+    #div_list {
+        border: 1px solid;
+        margin-left: 10px;
+        margin-top: 10px;
+        height: 100px;
+        width: 100px;
+        float: left;
+        display: none;
+    }
+</style>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+</script>
+<script>
+    $(function () {
+        var str = "";
+        var arrColor = ["red", "green", "yellow"];
+        var page = 0;//当前页数
+        var divs;//所有div的个数
+        var pagesize = 0;//最大页数
+        var pagesDiv = document.getElementById("pages");//显示当前页数的div
+        var div_content = document.getElementById("div_content");
+        var divnums = 0;
+        $("#sure").click(function () {
+            //一点击所以都得初始化
+            div_content.innerHTML = "";
+            str = "";
+            page = 0;
+            divnums = $("#divnums").val();
+            //插入div
+            for (var i = 0; i < divnums; i++) {
+                str += "<div id='div_list'></div>"
+            }
+            $(div_content).append(str);
+            //背景颜色赋值
+            divs = div_content.getElementsByTagName("div");
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.background = arrColor[i % 3];
+            }
+            //最大页数的计算
+            if (divs.length % 4 == 0) {
+                pagesize = divs.length / 4;
+            } else {
+                pagesize = Math.floor(divs.length / 4) + 1;
+            }
+            for (var i = 0; i < 4; i++) {
+                // divs[i].style.display = "block";
+                $(divs[i]).fadeIn("slow");
+            }
+ 
+            pagesDiv.innerHTML = ("第<font color='red'>" + (page + 1) + "</font>页");
+        });
+        $("#pre").click(function () {
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = "none";
+            }
+            if (page - 1 >= 0)//若-1后还有页数
+            {
+                page--;
+                for (var i = page * 4; i < (page + 1) * 4; i++) {
+                    $(divs[i]).fadeIn("slow");
+                }
+ 
+            }
+            else {//若无页数则返回最前页
+                page = pagesize - 1;
+                for (var i = page * 4; i < divs.length; i++)
+                    $(divs[i]).fadeIn("slow");
+ 
+ 
+            }
+            pagesDiv.innerHTML = ("第<font color='red'>" + (page + 1) + "</font>页");
+        });
+ 
+        $("#next").click(function () {
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = "none";
+            }
+            if (page + 1 < pagesize)//若加一还小于总页数，则还可以进行下一页
+            {
+                page++;
+                if ((page + 1) == pagesize)//若与最后一页相等
+                {
+ 
+                    for (var i = page * 4; i < divs.length; i++) {
+ 
+                        $(divs[i]).slideDown("slow");
+ 
+                    }
+                }
+                else {
+                    for (var i = page * 4; i < (page + 1) * 4; i++) {
+ 
+                        $(divs[i]).slideDown("slow");
+ 
+                    }
+                }
+ 
+ 
+            }
+            else {
+                page = 0;
+                for (var i = page * 4; i < (page + 1) * 4; i++) {
+                    $(divs[i]).slideDown("slow");
+                }
+ 
+            }
+            pagesDiv.innerHTML = ("第<font color='red'>" + (page + 1) + "</font>页");
+ 
+ 
+        });
+ 
+ 
+    });
+</script>
+<h2>Index</h2>
+<form method="post">
+    div个数： <input type="text" id="divnums" />
+    <input type="button" id="sure" value="确认" />
+    <input type="button" id="pre" value="上一页">
+    <input type="button" id="next" value="下一页">
+ 
+    <div id="pages"></div>
+ 
+    <div id="div_content"> </div>
+</form>
+--------------------- 
+作者：laizhixue 
+来源：CSDN 
+原文：https://blog.csdn.net/laizhixue/article/details/79162184 
+版权声明：本文为博主原创文章，转载请附上博文链接！
+</body>
+</html>

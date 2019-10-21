@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: '微软雅黑';
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.pointer{
+	/*width: 1920px;*/
+	width: 100%;
+	min-width: 1337px;
+    height: 2000px;
+}
+.header{
+    width: 1200px;
+    height: 182px;
+    margin: auto;
+    background: #fefefe;
+}
+.head{
+    width: 1200px;
+    height: 51px;
+}
+.head span{
+    float: left;
+    padding-left: 29px;
+    line-height: 51px;
+    color: #575757;
+}
+.head a{
+    float: right;
+    width: 260px;
+    height: 26px;
+    margin: 13px 5px;
+    border: 1px solid lightgrey;
+}
+.head a input{
+    float: left;
+    width: 227px;
+    height: 24px;
+    border: none;
+}
+.head a img{
+    float: right;
+}
+.nav{
+    width: 1200px;
+    height: 131px;
+}
+.nav img{
+    float: left;
+}
+.nav ul{
+    float: right;
+    width: 666px;
+    height: 131px;
+
+}
+.nav ul li{
+    float: left;
+    line-height: 131px;
+    font-size: 18px;
+    padding:0 34px;
+}
+.nav ul li a{
+    color: #696969;
+}
+.nav ul .cur a{
+    color: red;
+    padding-bottom: 16px;
+    border-bottom:2px solid red;
+}
+.nav ul li a:hover{
+    color: red;
+    padding-bottom: 16px;
+    border-bottom:2px solid red;
+}
+.slider{
+	position: relative;
+	width: 1337px;
+	height: 408px;
+	margin: auto;
+}
+.slider ul{
+	width: 1200px;
+	margin:49px auto;
+	
+}
+.slider ul li{
+	position: absolute;
+	left:68px;
+	top: 0;
+}
+.slider ul li img{
+	float: left;
+}
+.slider ul li .wenzi{
+	float: left;
+	margin: 0;
+	width: 346px;
+	height: 339px;
+}
+.slider ul li .wenzi h2{
+	font-size: 36px;
+	line-height: 68px;
+	text-align: center;
+}
+.slider ul li  a{
+	color: white;
+}
+.slider ul li .wenzi span{
+	display: block;
+	width: 234px;
+	line-height: 43px;
+	border: 1px solid white;
+	font-size:18px ;
+	text-align: center;
+	margin-left: 51px;
+}
+.slider ul li .wenzi strong{
+	display: block;
+	width: 327px;
+	height: 127px;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 1px;
+	padding: 22px 0 20px 35px;
+	font-weight: normal;	
+}
+
+.slider .p2 {
+	position: absolute;
+	left:68px;
+	bottom: 0;
+	/*width: 1200px;*/
+	height: 30px;
+	background: rgba(222,222,222,.6);
+}
+.slider .p2 span{
+	display: block;
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin:8px 5px;
+	/*padding: 0 500px;*/
+	border-radius: 50%;
+	background: white;
+}
+.slider .p2 span:first-child{
+	margin-left: 572px;
+}
+.slider .p2 span:last-child{
+	margin-right: 572px;
+}
+.slider .p2 .cur1{
+	background: red;
+}
+.slider strong{
+	font-weight: normal;
+	font-size: 68px;
+	color: white;
+	cursor: pointer;
+}
+.pre{
+	position: absolute;
+	left: 0;
+	top:120px;
+}
+.next{
+	position: absolute;
+	right: 0;
+	top:120px;
+}
+.footer{
+	width:1200px;
+	height: 234px;
+	margin: auto;
+}
+.footer .about{
+	width: 1200px;
+	height: 200px;
+	margin-top:17px; 	
+	color: white;
+}
+.footer .about img{
+	float: left;
+	width: 260px;
+	height: 200px;
+}
+.footer .about .yi>li{
+	float: left;
+	font-size: 14px;
+	line-height: 22px;
+	margin:30px 0 0 84px;
+}
+.footer .about .yi>li:first-child{
+	color: black;
+	margin-left: 80px;
+}
+.footer .about .yi>li:first-child a{
+	color: black;
+}
+.footer .about .yi>li a{
+	line-height: 30px;
+	color: white;
+	font-size: 24px;
+}
+.footer .dizhi{
+	width: 1200px;
+	line-height: 33px;	
+	color: white;
+}
+.content{
+	width: 1200px;
+	height: 900px;
+	margin:0 auto 108px;
+	background: #fafafa;
+	border: 1px solid #D7D7D7;
+}
+.content .left{
+	float: left;
+	width: 264px;
+	height: 400px;
+	margin: 42px 24px 0 9px;
+	
+}
+.content .left ul{
+	height:250px;
+	background: white;	
+	border:1px solid #DDDDDD;
+}
+.content .left img{
+	float: left;
+}
+.content .left h5{	
+	display: block;
+	margin: 29px 0 17px 0;
+	color: #d11719;
+	font-size: 12px;
+/*	line-height: 79px;*/
+}
+.content .left h5 span{
+	display: block;
+	font-size: 16px;
+	color: black;
+}
+.content .left li{
+	line-height: 39px;
+	padding-left: 78px;
+	border-bottom: 1px dotted #d7d7d7;
+}
+.content .left li a{
+	color: black;
+}
+.content .left .cur{
+	background: url(../images/left_bj.jpg);
+}
+.content .left .cur a{
+	color:white;
+}
+.content .left li a:hover{
+	color: white;
+}
+.content .left li:hover{
+	background: url(../images/left_bj.jpg);
+}
+.content .right{
+	float: right;
+	width: 888px;
+	height: 693px;
+	margin: 42px 9px 0 0;	
+}
